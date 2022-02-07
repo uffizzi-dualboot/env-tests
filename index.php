@@ -1,3 +1,3 @@
 <?
 
-getenv();
+var_dump(getenv());
