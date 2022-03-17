@@ -2,16 +2,16 @@ services:
   web:
     build: .
     secrets:
-      - postgres_user
-      - postgres_password
+      - pg_user
+      - pg_password
 
 secrets:
-  postgres_user:
-    external: true
-    name: POSTGRES_USER
-  postgres_password:
-    external: true
-    name: POSTGRES_PASSWORD
+  pg_user:
+    external: true               # indicates value is external to this repository
+    name: "POSTGRES_USER"        # i.e., value should be added in the Uffizzi Dashboard
+  pg_password:
+    external: true               # indicates value is external to this repository
+    name: "POSTGRES_PASSWORD"    # i.e., value should be added in the Uffizzi Dashboard
 
 x-uffizzi-ingress:
   service: web
