@@ -4,6 +4,7 @@ services:
     secrets:
       - pg_user
       - pg_password
+      - tst
 
 secrets:
   pg_user:
@@ -12,6 +13,9 @@ secrets:
   pg_password:
     external: true               # indicates value is external to this repository
     name: "POSTGRES_PASSWORD"    # i.e., value should be added in the Uffizzi Dashboard
+  tst:
+    external: true               # indicates value is external to this repository
+    name: "test"        # i.e., value should be added in the Uffizzi Dashboard
 
 x-uffizzi-ingress:
   service: web
