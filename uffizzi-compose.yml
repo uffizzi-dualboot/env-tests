@@ -5,6 +5,8 @@ services:
       - pg_user
       - pg_password
       - tst
+    environment:
+      TEST_ENV: test_env
 
 secrets:
   pg_user:
