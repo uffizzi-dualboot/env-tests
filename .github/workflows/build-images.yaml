@@ -45,7 +45,7 @@ jobs:
         uses: actions/checkout@v3
       - name: Render Compose File
         run: |
-          WEB_IMAGE=$(echo ${{ needs.build-vote.outputs.tags }})
+          WEB_IMAGE=$(echo ${{ needs.build-web.outputs.tags }})
           export WEB_IMAGE
           PGUSER=${{ secrets.PGUSER }}
           export PGUSER
