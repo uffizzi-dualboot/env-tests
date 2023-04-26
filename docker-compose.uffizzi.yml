@@ -1,6 +1,6 @@
 services:
   web:
-    image: "${WEB}"
+    image: "${WEB_IMAGE}"
     environment:
       POSTGRES_USER: "${PGUSER}"
       POSTGRES_PASSWORD: "${PGPASSWORD}"
