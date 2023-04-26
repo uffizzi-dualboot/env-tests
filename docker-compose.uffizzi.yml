@@ -1,0 +1,11 @@
+services:
+  web:
+    image: "${WEB}"
+    environment:
+      POSTGRES_USER: "${PGUSER}"
+      POSTGRES_PASSWORD: "${PGPASSWORD}"
+      TEST_ENV: test_env
+
+x-uffizzi-ingress:
+  service: web
+  port: 80
