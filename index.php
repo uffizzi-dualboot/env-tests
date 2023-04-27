@@ -1,5 +1,5 @@
 <?
 
-echo("version - 1\n\n");
+echo("version - prod\n\n");
 
 echo '<pre>'; print_r(getenv()); echo '</pre>';
