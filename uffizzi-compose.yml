@@ -1,6 +1,7 @@
 services:
   web:
-    build: .
+    build:
+      context: https://github.com/NealArw/env-tests#test
     secrets:
       - pg_user
       - pg_password
