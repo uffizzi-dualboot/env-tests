@@ -9,7 +9,7 @@ services:
 x-uffizzi:
   ingress:
     service: web
-    port: 80
+    port: 800
   continuous_preview:
     share_to_github: true
     delete_preview_after: 48h
