@@ -23,7 +23,7 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: ttl.sh/${{ env.WEB_UUID }}
-          tags: type=raw,value=24h
+          tags: type=raw,value=5m
       - name: Build and Push Image to ttl.sh ephemeral registry
         uses: docker/build-push-action@v4
         with:
